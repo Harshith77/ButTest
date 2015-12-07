@@ -1,41 +1,41 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="190" x="7" y="-2">
+  <block type="movement_forward" id="1" x="7" y="-2">
     <next>
-      <block type="controls_whileUntil" id="36" inline="false">
+      <block type="controls_whileUntil" id="2" inline="false">
         <field name="MODE">UNTIL</field>
         <value name="NUMBER">
-          <block type="sensor_button" id="102">
+          <block type="sensor_button" id="3">
             <field name="OBJECT">ENTER</field>
           </block>
         </value>
         <statement name="DO">
-          <block type="led_select" id="129" inline="true">
+          <block type="led_select" id="4" inline="true">
             <field name="ACTION">FLASH</field>
             <value name="LED">
-              <block type="math_number" id="146">
+              <block type="math_number" id="5">
                 <field name="NUM">0</field>
               </block>
             </value>
             <next>
-              <block type="led_select" id="130" inline="true">
+              <block type="led_select" id="6" inline="true">
                 <field name="ACTION">FLASH</field>
                 <value name="LED">
-                  <block type="math_number" id="147">
+                  <block type="math_number" id="7">
                     <field name="NUM">5</field>
                   </block>
                 </value>
                 <next>
-                  <block type="led_select" id="173" inline="true">
+                  <block type="led_select" id="8" inline="true">
                     <field name="ACTION">OFF</field>
                     <value name="LED">
-                      <block type="math_number" id="180">
+                      <block type="math_number" id="9">
                         <field name="NUM">3</field>
                       </block>
                     </value>
                     <next>
-                      <block type="robot_delay" id="149" inline="true">
+                      <block type="robot_delay" id="10" inline="true">
                         <value name="DELAY">
-                          <block type="math_number" id="158">
+                          <block type="math_number" id="11">
                             <field name="NUM">200</field>
                           </block>
                         </value>
