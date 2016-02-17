@@ -2,7 +2,7 @@
   <block type="controls_repeat" id="1" inline="true" x="-3" y="-2">
     <value name="TIMES">
       <block type="math_number" id="2">
-        <field name="NUM">5</field>
+        <field name="NUM">10</field>
       </block>
     </value>
     <statement name="DO">
@@ -10,8 +10,18 @@
         <next>
           <block type="controls_if" id="4" inline="false">
             <value name="IF0">
-              <block type="sensor_object" id="5">
-                <field name="OBJECT">LEFTFRONT</field>
+              <block type="logic_compare" id="71" inline="true">
+                <field name="OP">LT</field>
+                <value name="A">
+                  <block type="sensor_object" id="5">
+                    <field name="OBJECT">LEFTFRONT</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="78">
+                    <field name="NUM">40</field>
+                  </block>
+                </value>
               </block>
             </value>
             <statement name="DO0">
@@ -20,8 +30,18 @@
             <next>
               <block type="controls_if" id="7" inline="false">
                 <value name="IF0">
-                  <block type="sensor_object" id="8">
-                    <field name="OBJECT">RIGHTFRONT</field>
+                  <block type="logic_compare" id="64" inline="true">
+                    <field name="OP">LT</field>
+                    <value name="A">
+                      <block type="sensor_object" id="8">
+                        <field name="OBJECT">RIGHTFRONT</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="49">
+                        <field name="NUM">40</field>
+                      </block>
+                    </value>
                   </block>
                 </value>
                 <statement name="DO0">
